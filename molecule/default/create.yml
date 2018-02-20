@@ -21,4 +21,5 @@
         state: started
         recreate: no
         log_driver: none
+        privileged: yes
       with_items: "{{ molecule_yml.platforms }}"
