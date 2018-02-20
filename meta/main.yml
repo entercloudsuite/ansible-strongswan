@@ -13,7 +13,8 @@ galaxy_info:
     - molecule
 
 
-dependencies: []
+dependencies:
+  - { role: jsecchiero.strongswan, version: 1.0.0 }
   # List your role dependencies here, one per line.
   # Be sure to remove the '[]' above if you add dependencies
   # to this list.

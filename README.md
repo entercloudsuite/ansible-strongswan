@@ -20,7 +20,24 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - { role: ansible-strongswan }
+        - role: ansible-strongswan
+          strongswan_conn:
+            - name: example
+              conn:
+                auto: start
+                type: tunnel
+                authby: psk
+                keyexchange: ikev2
+              left:
+                address: 0.0.0.0/0
+                subnet: 10.3.0.0/16
+                id: de
+                updown: /usr/lib/ipsec/_updown_nat
+              right:
+                address: 88.88.88.88
+                subnet: 10.2.0.0/16
+                id: it
+              secret: something_needs_to_go_here
 
 ## Testing
 
