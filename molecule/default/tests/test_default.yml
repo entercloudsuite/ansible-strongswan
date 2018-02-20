@@ -1,0 +1,24 @@
+---
+package:
+  strongswan:
+    installed: true
+port:
+  tcp:4500:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  strongswan:
+    enabled: true
+    running: true
+user:
+  strongswan:
+    exists: true
+    groups:
+      - strongswan
+group:
+  strongswan:
+    exists: true
+process:
+  strongswan:
+    running: true
