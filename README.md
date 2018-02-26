@@ -21,6 +21,7 @@ Run with default vars:
     - hosts: all
       roles:
         - role: ansible-strongswan
+          mtu: 1374
           strongswan_conn:
             - name: example
               conn:
