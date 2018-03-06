@@ -5,3 +5,5 @@
   tasks:
   - name: install ansible prerequisite (python)
     raw: test -e /usr/bin/python || ( apt update -y && apt install python-minimal -y )
+  - name: install apparmor
+    package: name=apparmor

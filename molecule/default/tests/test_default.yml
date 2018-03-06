@@ -2,11 +2,6 @@
 package:
   strongswan:
     installed: true
-port:
-  udp:4500:
-    listening: true
-    ip:
-      - 0.0.0.0
 service:
   strongswan:
     enabled: true
