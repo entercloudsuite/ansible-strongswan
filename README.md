@@ -20,7 +20,7 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - role: ansible-strongswan
+        - role: entercloudsuite.strongswan
           mtu: 1374
           strongswan_conn:
             - name: example
